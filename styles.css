@@ -1,0 +1,97 @@
+/* General page styling */
+body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Calculator container */
+table {
+    border-collapse: separate;
+    border-spacing: 15px;
+    background-color: #1e1e1e;
+    /* grey background for body */
+    padding: 20px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 350px;
+}
+
+/* Display box styling */
+#inputBox {
+    width: 100%;
+    height: 60px;
+    font-size: 2rem;
+    text-align: right;
+    background-color: #000;
+    /* fully black top */
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding-right: 15px;
+    box-shadow: none;
+    /* remove blue glow */
+}
+
+/* Button styling */
+td {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.6);
+    /* standard shadow */
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+/* Hover effect */
+td:hover {
+    background-color: #444;
+    transform: scale(1.05);
+}
+
+/* 0 button styling (wider shape) */
+td[colspan="2"] {
+    border-radius: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* Operator button colors */
+
+.sign{
+    color: #447fbe;
+}
+
+/* Equal button - styled to match others */
+td[colspan="4"] {
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.6);
+    transition: background 0.2s;
+}
+
+td[colspan="4"]:hover {
+    background-color: #3b8ae0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 400px) {
+    td {
+        padding: 15px;
+        font-size: 1.2rem;
+    }
+
+    #inputBox {
+        font-size: 1.5rem;
+        height: 50px;
+    }
+}
